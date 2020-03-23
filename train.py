@@ -192,7 +192,7 @@ email=(email.get())
 def GetanEmail():
     fromaddr="Your Email"
     toaddr=email
-    msg=""
+    msg="Your attendence is successful""
     username="Your Email"
     password="Your Password"
     server=smtplib.SMTP("smtp.gmail.com:587")
@@ -200,7 +200,6 @@ def GetanEmail():
     server.starttls()
     server.login(username,password)
     server.sendmail(fromaddr,toaddr,msg)
-    print("Your Attendence is successful")
     server.quit();
     res="Mail send success"
     message.configure(text= res)
