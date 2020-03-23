@@ -193,8 +193,6 @@ def GetanEmail():
     fromaddr="Your Email"
     toaddr=email
     msg=""
-    for i in range(4):
-        msg+=str(r.randint(1,9))
     username="Your Email"
     password="Your Password"
     server=smtplib.SMTP("smtp.gmail.com:587")
